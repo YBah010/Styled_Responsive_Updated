@@ -1,17 +1,14 @@
-// ==========================================
+
 // Milestone 3 JavaScript
 //
 // 1. DOM Interaction
 // 2. Form Validation
 // 3. GitHub API Fetch Bonus
-// ==========================================
 
 
-
-// ==========================================
 // 1. DOM INTERACTION
 // Show and hide the skills section
-// ==========================================
+
 
 const toggleSkillsButton =
     document.querySelector("#toggle-skills");

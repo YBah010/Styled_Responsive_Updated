@@ -17,6 +17,11 @@
     --space-6: 48px;
 }
 
+
+/* =========================================
+   GENERAL STYLES
+   ========================================= */
+
 * {
     box-sizing: border-box;
 }
@@ -62,6 +67,11 @@ a:hover {
     text-decoration-thickness: 3px;
 }
 
+
+/* =========================================
+   ACCESSIBILITY
+   ========================================= */
+
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -75,9 +85,12 @@ textarea:focus-visible {
     top: -100px;
     left: var(--space-2);
     z-index: 1000;
+
     padding: var(--space-1) var(--space-2);
+
     color: var(--white);
     background-color: var(--navy);
+
     font-weight: 700;
 }
 
@@ -85,24 +98,34 @@ textarea:focus-visible {
     top: var(--space-2);
 }
 
+
+/* =========================================
+   HEADER
+   ========================================= */
+
 header {
-    background-color: var(--navy);
-    color: var(--white);
     padding: var(--space-3) var(--space-2);
+
+    color: var(--white);
+    background-color: var(--navy);
 }
 
 .site-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     gap: var(--space-3);
+
     width: min(1120px, 100%);
     margin: 0 auto;
 }
 
 .site-title {
     margin: 0;
+
     color: var(--white);
+
     font-family: "Poppins", Arial, sans-serif;
     font-size: 2rem;
     font-weight: 700;
@@ -112,17 +135,26 @@ header {
     color: var(--gold);
 }
 
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
 nav {
     display: flex;
     flex-wrap: wrap;
+
     gap: var(--space-1);
 }
 
 nav a {
     padding: var(--space-1) var(--space-2);
+
     color: var(--white);
+
     font-weight: 600;
     text-decoration: none;
+
     border: 2px solid transparent;
     border-radius: 8px;
 }
@@ -135,51 +167,84 @@ nav a.active {
     border-color: var(--gold);
 }
 
+
+/* =========================================
+   MAIN CONTENT
+   ========================================= */
+
 main {
     width: min(1120px, calc(100% - 32px));
     margin: 0 auto;
+
     padding: var(--space-5) 0;
 }
 
 section {
     margin-bottom: var(--space-4);
+
     padding: var(--space-4);
+
     background-color: var(--white);
+
     border: 2px solid var(--blue);
     border-radius: 16px;
+
     box-shadow: 0 8px 24px rgba(23, 59, 112, 0.08);
 }
 
+.section-intro {
+    max-width: 720px;
+
+    margin-bottom: var(--space-3);
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
 #hero {
     padding: var(--space-6) var(--space-4);
+
     color: var(--white);
     text-align: center;
-    background: linear-gradient(135deg, var(--navy), var(--blue));
+
+    background: linear-gradient(
+        135deg,
+        var(--navy),
+        var(--blue)
+    );
+
     border: 4px solid var(--gold);
 }
 
 #hero h1 {
     color: var(--white);
+
     font-size: clamp(2rem, 5vw, 3.5rem);
 }
 
 #hero p {
     max-width: 720px;
+
     margin-right: auto;
     margin-bottom: 0;
     margin-left: auto;
+
     font-size: 1.1rem;
 }
 
-.section-intro {
-    max-width: 720px;
-    margin-bottom: var(--space-3);
-}
+
+/* =========================================
+   FEATURE AND PROJECT GRIDS
+   ========================================= */
 
 .feature-grid,
 .project-grid {
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
+
     gap: var(--space-3);
 }
 
@@ -187,8 +252,11 @@ section {
 .project-card,
 .contact-card {
     min-width: 0;
+
     padding: var(--space-3);
+
     background-color: var(--light-blue);
+
     border: 2px solid var(--navy);
     border-radius: 12px;
 }
@@ -204,43 +272,86 @@ section {
 
 .project-label {
     align-self: flex-start;
+
     margin-bottom: var(--space-2);
+
     padding: var(--space-1) var(--space-2);
+
     color: var(--navy);
+
     font-size: 0.85rem;
     font-weight: 700;
+
     background-color: var(--gold);
+
     border-radius: 20px;
 }
 
+
+/* =========================================
+   FEATURED WORK
+   ========================================= */
+
 .highlight {
     margin-bottom: 0;
+
     padding: var(--space-3);
+
     background-color: var(--light-gold);
+
     border: 2px solid var(--gold);
     border-left: 8px solid var(--navy);
     border-radius: 8px;
 }
 
+
+/* =========================================
+   DOM INTERACTION
+   SHOW / HIDE SKILLS
+   ========================================= */
+
+#toggle-skills {
+    margin-bottom: var(--space-3);
+}
+
+[hidden] {
+    display: none !important;
+}
+
+
+/* =========================================
+   ABOUT PAGE
+   ========================================= */
+
 #about-section {
     display: grid;
-    grid-template-columns: minmax(240px, 0.8fr) minmax(0, 1.2fr);
+
+    grid-template-columns:
+        minmax(240px, 0.8fr)
+        minmax(0, 1.2fr);
+
     gap: var(--space-4);
+
     align-items: center;
 }
 
 .profile-pic {
     width: 100%;
     max-width: 360px;
+
     margin: 0 auto;
+
     border: 4px solid var(--navy);
     border-radius: 16px;
+
     box-shadow: 8px 8px 0 var(--gold);
 }
 
 .contact-grid {
     display: grid;
+
     grid-template-columns: repeat(2, 1fr);
+
     gap: var(--space-3);
 }
 
@@ -248,20 +359,29 @@ section {
     overflow-wrap: anywhere;
 }
 
+
+/* =========================================
+   CONTACT FORM
+   ========================================= */
+
 form {
     max-width: 760px;
 }
 
 fieldset {
     margin: 0 0 var(--space-3);
+
     padding: var(--space-3);
+
     border: 2px solid var(--navy);
     border-radius: 12px;
 }
 
 legend {
     padding: 0 var(--space-1);
+
     color: var(--navy);
+
     font-family: "Poppins", Arial, sans-serif;
     font-weight: 700;
 }
@@ -276,19 +396,26 @@ legend {
 
 label {
     display: block;
+
     margin-bottom: var(--space-1);
+
     color: var(--navy);
+
     font-weight: 700;
 }
 
 input,
 textarea {
     width: 100%;
+
     padding: 12px;
+
     color: var(--dark-text);
     background-color: var(--white);
+
     border: 2px solid #52606d;
     border-radius: 8px;
+
     font: inherit;
 }
 
@@ -298,46 +425,106 @@ textarea {
 
 .field-hint {
     margin: var(--space-1) 0 0;
+
     font-size: 0.9rem;
 }
 
+
+/* =========================================
+   FORM VALIDATION
+   ========================================= */
+
 .error-message {
     min-height: 1.5em;
+
     margin: var(--space-1) 0 0;
+
     color: var(--error);
+
     font-weight: 700;
 }
 
 [aria-invalid="true"] {
     border: 3px solid var(--error);
+
     background-color: #fff5f5;
-}
-
-button {
-    padding: 12px var(--space-3);
-    color: var(--white);
-    background-color: var(--navy);
-    border: 2px solid var(--navy);
-    border-radius: 8px;
-    font: inherit;
-    font-weight: 700;
-    cursor: pointer;
-}
-
-button:hover {
-    color: var(--navy);
-    background-color: var(--gold);
 }
 
 .form-status {
     margin-top: var(--space-2);
+
     font-weight: 700;
 }
 
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+button {
+    padding: 12px var(--space-3);
+
+    color: var(--white);
+    background-color: var(--navy);
+
+    border: 2px solid var(--navy);
+    border-radius: 8px;
+
+    font: inherit;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+button:hover {
+    color: var(--navy);
+
+    background-color: var(--gold);
+}
+
+
+/* =========================================
+   GITHUB API SECTION
+   ========================================= */
+
+.github-profile {
+    margin-top: var(--space-3);
+
+    padding: var(--space-3);
+
+    background-color: var(--light-blue);
+
+    border: 2px solid var(--navy);
+    border-radius: 12px;
+}
+
+.github-profile:empty {
+    display: none;
+}
+
+.github-profile h3 {
+    margin-bottom: var(--space-2);
+}
+
+.github-profile p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
 footer {
     padding: var(--space-3) var(--space-2);
+
     color: var(--white);
     text-align: center;
+
     background-color: var(--navy);
 }
 
@@ -345,9 +532,16 @@ footer p {
     margin: 0;
 }
 
+
+/* =========================================
+   TABLET RESPONSIVE STYLES
+   ========================================= */
+
 @media (max-width: 768px) {
+
     .site-header {
         flex-direction: column;
+
         text-align: center;
     }
 
@@ -357,6 +551,7 @@ footer p {
 
     main {
         width: min(100% - 24px, 720px);
+
         padding: var(--space-4) 0;
     }
 
@@ -376,9 +571,16 @@ footer p {
     .profile-pic {
         max-width: 320px;
     }
+
 }
 
+
+/* =========================================
+   MOBILE RESPONSIVE STYLES
+   ========================================= */
+
 @media (max-width: 480px) {
+
     header {
         padding: var(--space-2);
     }
@@ -389,28 +591,37 @@ footer p {
 
     nav {
         width: 100%;
+
         flex-direction: column;
     }
 
     nav a {
         width: 100%;
+
         text-align: center;
-        background-color: rgba(255, 255, 255, 0.08);
+
+        background-color:
+            rgba(255, 255, 255, 0.08);
     }
 
     main {
         width: min(100% - 16px, 460px);
+
         padding: var(--space-3) 0;
     }
 
     section {
         margin-bottom: var(--space-3);
+
         padding: var(--space-2);
+
         border-radius: 12px;
     }
 
     #hero {
-        padding: var(--space-4) var(--space-2);
+        padding:
+            var(--space-4)
+            var(--space-2);
     }
 
     #hero h1 {
@@ -432,6 +643,12 @@ footer p {
 
     .profile-pic {
         max-width: 100%;
-        box-shadow: 5px 5px 0 var(--gold);
+
+        box-shadow:
+            5px
+            5px
+            0
+            var(--gold);
     }
+
 }

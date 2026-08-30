@@ -1,103 +1,470 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About and Contact | My Portfolio</title>
-    <meta name="description" content="Learn more about Yaya Bah and send an accessible contact message.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        About and Contact | My Portfolio
+    </title>
+
+    <meta
+        name="description"
+        content="Learn more about Yaya Bah and send an accessible contact message."
+    >
+
+
+    <!-- Google Fonts -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+
+    <!-- JavaScript -->
+
+    <script
+        src="script.js"
+        defer>
+    </script>
+
 </head>
+
+
 <body>
-<a class="skip-link" href="#main-content">Skip to main content</a>
 
-<header>
-    <div class="site-header">
-        <p class="site-title">My <span>Portfolio</span></p>
-        <nav aria-label="Main navigation">
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="about.html" class="active" aria-current="page">About &amp; Contact</a>
-        </nav>
-    </div>
-</header>
 
-<main id="main-content">
-    <section id="about-section" aria-labelledby="about-heading">
-        <div>
-            <img src="me.jpeg" class="profile-pic" alt="Portrait of Yaya Bah">
+    <!-- Accessibility Skip Link -->
+
+    <a
+        class="skip-link"
+        href="#main-content">
+        Skip to main content
+    </a>
+
+
+
+    <!-- Header -->
+
+    <header>
+
+        <div class="site-header">
+
+            <p class="site-title">
+                My <span>Portfolio</span>
+            </p>
+
+            <nav aria-label="Main navigation">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="projects.html">
+                    Projects
+                </a>
+
+                <a
+                    href="about.html"
+                    class="active"
+                    aria-current="page">
+
+                    About &amp; Contact
+
+                </a>
+
+            </nav>
+
         </div>
-        <div class="about-text">
-            <h1 id="about-heading">About Me</h1>
-            <p>Hello! My name is <strong>Yaya Bah</strong>, and I am a cybersecurity student with a strong interest in protecting computer systems, networks, and data. I enjoy learning about technology and building practical skills in cybersecurity and web development.</p>
-            <p>My goal is to build a successful career where I can help organizations defend against cyber threats while continuing to grow professionally. Outside of technology, I enjoy spending time with family, learning new things, and taking on challenges that help me improve.</p>
-        </div>
-    </section>
 
-    <section aria-labelledby="contact-info-heading">
-        <h2 id="contact-info-heading">Contact Information</h2>
-        <div class="contact-grid">
-            <article class="contact-card">
-                <h3>Email</h3>
-                <p><a href="mailto:bahyaya010@email.com">bahyaya010@email.com</a></p>
-            </article>
-            <article class="contact-card">
-                <h3>Phone</h3>
-                <p><a href="tel:+15022026662">(502) 202-6662</a></p>
-            </article>
-        </div>
-    </section>
+    </header>
 
-    <section aria-labelledby="form-heading">
-        <h2 id="form-heading">Send Me a Message</h2>
-        <p>Fields marked with an asterisk (*) are required.</p>
 
-        <form id="contact-form" action="#" method="post" novalidate>
-            <fieldset>
-                <legend>Your contact details</legend>
 
-                <div class="form-group">
-                    <label for="name">Full name <span aria-hidden="true">*</span></label>
-                    <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-error">
-                    <p class="error-message" id="name-error" aria-live="polite"></p>
-                </div>
+    <!-- Main Content -->
 
-                <div class="form-group">
-                    <label for="email">Email address <span aria-hidden="true">*</span></label>
-                    <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-hint email-error">
-                    <p class="field-hint" id="email-hint">Example: name@example.com</p>
-                    <p class="error-message" id="email-error" aria-live="polite"></p>
-                </div>
-            </fieldset>
+    <main id="main-content">
 
-            <fieldset>
-                <legend>Your message</legend>
 
-                <div class="form-group">
-                    <label for="subject">Subject <span aria-hidden="true">*</span></label>
-                    <input id="subject" name="subject" type="text" required aria-describedby="subject-error">
-                    <p class="error-message" id="subject-error" aria-live="polite"></p>
-                </div>
+        <!-- About Me -->
 
-                <div class="form-group">
-                    <label for="message">Message <span aria-hidden="true">*</span></label>
-                    <textarea id="message" name="message" rows="6" required minlength="10" aria-describedby="message-hint message-error"></textarea>
-                    <p class="field-hint" id="message-hint">Please enter at least 10 characters.</p>
-                    <p class="error-message" id="message-error" aria-live="polite"></p>
-                </div>
-            </fieldset>
+        <section
+            id="about-section"
+            aria-labelledby="about-heading">
 
-            <button type="submit">Send Message</button>
-            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
-        </form>
-    </section>
-</main>
 
-<footer>
-    <p>&copy; 2026 Yaya Bah. All rights reserved.</p>
-</footer>
+            <div>
+
+                <img
+                    src="me.jpeg"
+                    class="profile-pic"
+                    alt="Portrait of Yaya Bah"
+                >
+
+            </div>
+
+
+            <div class="about-text">
+
+                <h1 id="about-heading">
+                    About Me
+                </h1>
+
+                <p>
+                    Hello! My name is
+                    <strong>Yaya Bah</strong>,
+                    and I am a cybersecurity student
+                    with a strong interest in protecting
+                    computer systems, networks, and data.
+                    I enjoy learning about technology and
+                    building practical skills in
+                    cybersecurity and web development.
+                </p>
+
+                <p>
+                    My goal is to build a successful
+                    career where I can help organizations
+                    defend against cyber threats while
+                    continuing to grow professionally.
+                    Outside of technology, I enjoy
+                    spending time with family, learning
+                    new things, and taking on challenges
+                    that help me improve.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Contact Information -->
+
+        <section
+            aria-labelledby="contact-info-heading">
+
+            <h2 id="contact-info-heading">
+                Contact Information
+            </h2>
+
+
+            <div class="contact-grid">
+
+
+                <article class="contact-card">
+
+                    <h3>
+                        Email
+                    </h3>
+
+                    <p>
+
+                        <a href="mailto:bahyaya010@email.com">
+                            bahyaya010@email.com
+                        </a>
+
+                    </p>
+
+                </article>
+
+
+
+                <article class="contact-card">
+
+                    <h3>
+                        Phone
+                    </h3>
+
+                    <p>
+
+                        <a href="tel:+15022026662">
+                            (502) 202-6662
+                        </a>
+
+                    </p>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             CONTACT FORM
+             JavaScript Validation
+             ========================================== -->
+
+        <section aria-labelledby="form-heading">
+
+            <h2 id="form-heading">
+                Send Me a Message
+            </h2>
+
+
+            <p>
+                Fields marked with an asterisk (*)
+                are required.
+            </p>
+
+
+            <form
+                id="contact-form"
+                action="#"
+                method="post"
+                novalidate>
+
+
+                <!-- Contact Details -->
+
+                <fieldset>
+
+                    <legend>
+                        Your Contact Details
+                    </legend>
+
+
+                    <!-- Name -->
+
+                    <div class="form-group">
+
+                        <label for="name">
+
+                            Full Name
+
+                            <span aria-hidden="true">
+                                *
+                            </span>
+
+                        </label>
+
+
+                        <input
+                            id="name"
+                            name="name"
+                            type="text"
+                            autocomplete="name"
+                            required
+                            aria-describedby="name-error"
+                        >
+
+
+                        <p
+                            class="error-message"
+                            id="name-error"
+                            aria-live="polite">
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- Email -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+
+                            Email Address
+
+                            <span aria-hidden="true">
+                                *
+                            </span>
+
+                        </label>
+
+
+                        <input
+                            id="email"
+                            name="email"
+                            type="email"
+                            autocomplete="email"
+                            required
+                            aria-describedby="email-hint email-error"
+                        >
+
+
+                        <p
+                            class="field-hint"
+                            id="email-hint">
+
+                            Example:
+                            name@example.com
+
+                        </p>
+
+
+                        <p
+                            class="error-message"
+                            id="email-error"
+                            aria-live="polite">
+                        </p>
+
+                    </div>
+
+
+                </fieldset>
+
+
+
+                <!-- Message Details -->
+
+                <fieldset>
+
+                    <legend>
+                        Your Message
+                    </legend>
+
+
+
+                    <!-- Subject -->
+
+                    <div class="form-group">
+
+                        <label for="subject">
+
+                            Subject
+
+                            <span aria-hidden="true">
+                                *
+                            </span>
+
+                        </label>
+
+
+                        <input
+                            id="subject"
+                            name="subject"
+                            type="text"
+                            required
+                            aria-describedby="subject-error"
+                        >
+
+
+                        <p
+                            class="error-message"
+                            id="subject-error"
+                            aria-live="polite">
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- Message -->
+
+                    <div class="form-group">
+
+                        <label for="message">
+
+                            Message
+
+                            <span aria-hidden="true">
+                                *
+                            </span>
+
+                        </label>
+
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            required
+                            minlength="10"
+                            aria-describedby="message-hint message-error"></textarea>
+
+
+                        <p
+                            class="field-hint"
+                            id="message-hint">
+
+                            Please enter at least
+                            10 characters.
+
+                        </p>
+
+
+                        <p
+                            class="error-message"
+                            id="message-error"
+                            aria-live="polite">
+                        </p>
+
+                    </div>
+
+
+                </fieldset>
+
+
+
+                <!-- Submit Button -->
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+
+
+                <!-- Form Status -->
+
+                <p
+                    id="form-status"
+                    class="form-status"
+                    role="status"
+                    aria-live="polite">
+                </p>
+
+
+            </form>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 Yaya Bah.
+            All rights reserved.
+        </p>
+
+    </footer>
+
+
 </body>
+
 </html>

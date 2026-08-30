@@ -1,63 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
     <title>Home | My Portfolio</title>
-    <meta name="description" content="The personal portfolio website of cybersecurity student Yaya Bah.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+
+    <meta
+        name="description"
+        content="The personal portfolio website of cybersecurity student Yaya Bah."
+    >
+
+    <!-- Google Fonts -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <!-- JavaScript -->
+    <script
+        src="script.js"
+        defer>
+    </script>
+
 </head>
+
+
 <body>
-<a class="skip-link" href="#main-content">Skip to main content</a>
 
-<header>
-    <div class="site-header">
-        <p class="site-title">My <span>Portfolio</span></p>
-        <nav aria-label="Main navigation">
-            <a href="index.html" class="active" aria-current="page">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="about.html">About &amp; Contact</a>
-        </nav>
-    </div>
-</header>
+    <!-- Accessibility Skip Link -->
+    <a
+        class="skip-link"
+        href="#main-content">
+        Skip to main content
+    </a>
 
-<main id="main-content">
-    <section id="hero" aria-labelledby="hero-heading">
-        <h1 id="hero-heading">Welcome to My Portfolio</h1>
-        <p>This website introduces who I am, highlights some of my work, and shares my interests in cybersecurity, technology, and web development.</p>
-    </section>
 
-    <section aria-labelledby="skills-heading">
-        <h2 id="skills-heading">What I Do</h2>
-        <p class="section-intro">I am developing skills that will help me build a successful career in cybersecurity and information technology.</p>
+    <!-- Header -->
+    <header>
 
-        <div class="feature-grid">
-            <article class="feature-card">
-                <h3>Cybersecurity</h3>
-                <p>I work as a cybersecurity analyst and enjoy learning how to protect computer systems, networks, and sensitive information from cyber threats.</p>
-            </article>
-            <article class="feature-card">
-                <h3>Web Development</h3>
-                <p>I am learning how to create organized, attractive, and responsive websites using HTML and CSS.</p>
-            </article>
-            <article class="feature-card">
-                <h3>Problem Solving</h3>
-                <p>I enjoy analyzing technical problems and finding practical solutions that improve security and performance.</p>
-            </article>
+        <div class="site-header">
+
+            <p class="site-title">
+                My <span>Portfolio</span>
+            </p>
+
+            <nav aria-label="Main navigation">
+
+                <a
+                    href="index.html"
+                    class="active"
+                    aria-current="page">
+                    Home
+                </a>
+
+                <a href="projects.html">
+                    Projects
+                </a>
+
+                <a href="about.html">
+                    About &amp; Contact
+                </a>
+
+            </nav>
+
         </div>
-    </section>
 
-    <section aria-labelledby="featured-heading">
-        <h2 id="featured-heading">Featured Work</h2>
-        <p class="highlight">Visit my <a href="projects.html">Projects page</a> to learn more about my portfolio website, cybersecurity labs, and network security work.</p>
-    </section>
-</main>
+    </header>
 
-<footer>
-    <p>&copy; 2026 Yaya Bah. All rights reserved.</p>
-</footer>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+
+        <!-- Hero Section -->
+        <section
+            id="hero"
+            aria-labelledby="hero-heading">
+
+            <h1 id="hero-heading">
+                Welcome to My Portfolio
+            </h1>
+
+            <p>
+                This website introduces who I am,
+                highlights some of my work, and shares
+                my interests in cybersecurity,
+                technology, and web development.
+            </p>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             DOM INTERACTION SECTION
+             ========================================== -->
+
+        <section aria-labelledby="skills-heading">
+
+            <h2 id="skills-heading">
+                What I Do
+            </h2>
+
+            <p class="section-intro">
+                I am developing skills that will help
+                me build a successful career in
+                cybersecurity and information technology.
+            </p>
+
+
+            <!-- JavaScript Show/Hide Button -->
+
+            <button
+                id="toggle-skills"
+                type="button"
+                aria-expanded="true"
+                aria-controls="skills-content">
+                Hide Skills
+            </button>
+
+
+            <div
+                id="skills-content"
+                class="feature-grid">
+
+
+                <!-- Cybersecurity -->
+
+                <article class="feature-card">
+
+                    <h3>
+                        Cybersecurity
+                    </h3>
+
+                    <p>
+                        I work as a cybersecurity analyst
+                        and enjoy learning how to protect
+                        computer systems, networks, and
+                        sensitive information from cyber
+                        threats.
+                    </p>
+
+                </article>
+
+
+                <!-- Web Development -->
+
+                <article class="feature-card">
+
+                    <h3>
+                        Web Development
+                    </h3>
+
+                    <p>
+                        I am learning how to create
+                        organized, attractive, responsive,
+                        and interactive websites using
+                        HTML, CSS, and JavaScript.
+                    </p>
+
+                </article>
+
+
+                <!-- Problem Solving -->
+
+                <article class="feature-card">
+
+                    <h3>
+                        Problem Solving
+                    </h3>
+
+                    <p>
+                        I enjoy analyzing technical
+                        problems and finding practical
+                        solutions that improve security
+                        and performance.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Featured Work -->
+
+        <section aria-labelledby="featured-heading">
+
+            <h2 id="featured-heading">
+                Featured Work
+            </h2>
+
+            <p class="highlight">
+
+                Visit my
+
+                <a href="projects.html">
+                    Projects page
+                </a>
+
+                to learn more about my portfolio
+                website, cybersecurity labs, and
+                network security work.
+
+            </p>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             OPTIONAL API BONUS SECTION
+             ========================================== -->
+
+        <section aria-labelledby="github-heading">
+
+            <h2 id="github-heading">
+                My GitHub Profile
+            </h2>
+
+            <p>
+                Click the button below to load live
+                information from my GitHub profile.
+            </p>
+
+
+            <button
+                id="load-github"
+                type="button">
+                Load GitHub Profile
+            </button>
+
+
+            <div
+                id="github-profile"
+                class="github-profile"
+                aria-live="polite">
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 Yaya Bah.
+            All rights reserved.
+        </p>
+
+    </footer>
+
+
 </body>
+
 </html>
